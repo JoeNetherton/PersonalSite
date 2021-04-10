@@ -1,0 +1,270 @@
+:root {
+  --clr-lightgrey: #f5f5f5;
+  --clr--darkgrey: #383b3e;
+}
+
+body {
+  height: calc(100vh - 8em);
+  color: var(--clr--darkgrey);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  font-size: 130%;
+  line-height: 1.6;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+  font-weight: normal;
+}
+
+h2{
+  margin-bottom: 2em;
+}
+
+.project_content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+section{
+  margin-bottom: 4em;
+}
+
+.tile_area {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20em 20em;
+  grid-template-areas:
+    "tile1 tile2"
+    "tile3 tile4";
+}
+
+.about_me {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+.tile-tweet{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../images/politweet.png");
+}
+.tile-tweet:hover{
+  background: url("../images/politweet.png");
+  color: var(--clr--darkgrey);
+}
+
+.tile-vietnamese{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../images/vietnam.jpeg");
+}
+.tile-vietnamese:hover{
+  background: url("../images/vietnam.jpeg");
+  color: var(--clr-lightgrey);
+}
+
+.tile-deeper{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../images/densenet.png");
+}
+.tile-deeper:hover{
+  background: url("../images/densenet.png");
+  color: var(--clr--darkgrey);
+}
+
+.tile-digits{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("../images/mnist.png");
+}
+.tile-digits:hover{
+  background: url("../images/mnist.png");
+  color: var(--clr--darkgrey);
+}
+
+.tile{
+  color: var(--clr-lightgrey);
+  margin: 0.2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+}
+
+.tile:hover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+}
+
+.tile h2 {
+  padding-top: 25%;
+  text-align: center;
+  font-size: 130%;
+}
+
+footer {
+  background-color: black;
+  color: var(--clr-lightgrey);
+}
+
+footer p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.vertical_nav {
+  margin-top: 0;
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 25%;
+}
+
+.vertical_nav li {
+  display: inline;
+  margin: 1em;
+}
+
+.vertical_nav a {
+  text-decoration: none;
+  color: var(--clr-lightgrey);
+  text-align: center;
+  font-size: 160%;
+  font-weight: 225;
+}
+
+.vertical_nav a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.vertical_nav-project {
+  margin-top: 0;
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.vertical_nav-project li {
+  display: inline;
+  margin: 1em;
+}
+
+.vertical_nav-project a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 160%;
+  font-weight: 225;
+}
+
+.vertical_nav-project a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  font-size: 200%;
+  margin-bottom: 0;
+}
+
+.github_link {
+  background-color: #0c71e0;
+  color: var(--clr-lightgrey);
+  font-size: 125%;
+  text-decoration: none;
+  padding: 0.25em;
+  border-radius: 7.5px;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+.split img {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.hero {
+  color: var(--clr-lightgrey);
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 25.6%;
+  background: #222;
+  background: url(../images/landing_background.jpeg),
+    radial-gradient(#888, #555);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+@media (min-width: 35em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
+
+  .line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 300%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-weight: 250;
+  }
+  
+  /* Animation */
+  .anim-typewriter {
+    animation: typewriter 3.5s steps(44) 1s 1 normal both,
+      blinkTextCursor 1s steps(44) infinite normal;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17.5em;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
+}
